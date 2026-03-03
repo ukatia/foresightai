@@ -1,6 +1,8 @@
 # NovaSafe - Emergency Action Planner
 ## AWS Nova Challenge Submission
 
+NovaSafe delivers AI-powered emergency guidance and instant access to help. Get calm, step-by-step safety plans and one-tap calling to 911 when every second counts.
+
 **Live Demo**: [Your deployment URL]  
 **GitHub**: [Your repository URL]
 
@@ -22,7 +24,7 @@ With Amazon Nova's advanced language understanding and reasoning, this vision be
 
 ## 🎯 What it does
 
-NovaSafe is an AI-powered emergency response planner that transforms chaotic situations into structured action plans. Here's how it works:
+NovaSafe is an AI-powered emergency response planner that transforms chaotic situations into structured action plans while providing instant access to emergency services. Here's how it works:
 
 **User Input:**
 - Location (where the emergency is happening)
@@ -37,12 +39,17 @@ NovaSafe is an AI-powered emergency response planner that transforms chaotic sit
    - Clear time estimates (Immediate, 30 seconds, 1-2 minutes, etc.)
 4. **Calming Message** - Reassuring guidance to reduce panic
 5. **Emergency Resources** - Relevant contact numbers and support services
+6. **One-Tap Emergency Calling** - Instant access to 911, Poison Control, Suicide Prevention, and Red Cross
 
 **Key Features:**
 - Real-time AI analysis using Amazon Nova Pro
+- Floating emergency call button (always accessible)
+- Quick dial menu with multiple emergency services
 - Contextual responses based on situation keywords (fire, medical, etc.)
 - Color-coded risk levels for quick visual assessment
 - Clean, calming UI designed for people under stress
+- Quick start templates for common emergencies
+- Analysis history and sharing capabilities
 - Mock mode for demos without AWS costs
 
 ---

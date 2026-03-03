@@ -26,6 +26,11 @@ export default function ActionPlan({ data, onReset }) {
         ← New Emergency
       </button>
 
+      {/* Quick 911 Button */}
+      <a href="tel:911" style={styles.call911Button}>
+        🚨 Call 911 Now
+      </a>
+
       {/* Risk Assessment */}
       <div style={{...styles.riskCard, borderColor: getRiskColor(data.risk_level)}}>
         <div style={styles.riskHeader}>
@@ -100,8 +105,23 @@ const styles = {
     borderRadius: '8px',
     fontSize: '16px',
     cursor: 'pointer',
-    marginBottom: '30px',
+    marginBottom: '16px',
     fontWeight: '600',
+  },
+  call911Button: {
+    display: 'block',
+    padding: '16px',
+    background: 'linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)',
+    color: 'white',
+    border: 'none',
+    borderRadius: '12px',
+    fontSize: '20px',
+    fontWeight: '700',
+    cursor: 'pointer',
+    marginBottom: '24px',
+    textAlign: 'center',
+    textDecoration: 'none',
+    boxShadow: '0 4px 12px rgba(231, 76, 60, 0.4)',
   },
   riskCard: {
     background: '#fff',

@@ -31,6 +31,18 @@ async def root():
 async def health_check():
     return {"status": "healthy"}
 
+@app.get("/stats")
+async def get_stats():
+    """
+    Get usage statistics (mock data for demo)
+    """
+    return {
+        "total_analyses": 1247,
+        "avg_response_time": "1.8s",
+        "most_common_emergency": "Fire-related incidents",
+        "success_rate": "99.2%"
+    }
+
 @app.post("/analyze", response_model=EmergencyResponse)
 async def analyze_emergency(input_data: EmergencyInput):
     """
@@ -56,6 +68,9 @@ async def analyze_emergency(input_data: EmergencyInput):
         )
     
     except Exception as e:
+        import traceback
+        print(f"ERROR: {str(e)}")
+        print(traceback.format_exc())
         raise HTTPException(status_code=500, detail=f"Analysis failed: {str(e)}")
 
 if __name__ == "__main__":

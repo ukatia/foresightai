@@ -112,12 +112,19 @@ foresightai/
 ## 🎨 Features
 
 - ✅ Real-time AI analysis using Amazon Nova
+- ✅ Quick start templates for common emergencies
 - ✅ Contextual emergency responses
 - ✅ Priority-based action steps
 - ✅ Risk level color coding
+- ✅ Share & print action plans
+- ✅ Analysis history (last 3)
+- ✅ Response time tracking
 - ✅ Calming UI design
 - ✅ Mock mode for demos
 - ✅ Responsive design
+- ✅ Print-friendly layouts
+
+See [FEATURES.md](FEATURES.md) for complete feature list.
 
 ## 📊 API Endpoints
 
